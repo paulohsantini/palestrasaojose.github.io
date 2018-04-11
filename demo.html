@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+ 
+<html lang="pt"> 
+ <head>
+ <title>Tutorial de HTML5</title>
+ <meta name="description" content="Como usar as tags header, footer e article em HTML5">
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ 
+ <script language="javascript" type="text/javascript" src="meujs.js">// exemplo de como importar javascript offline (externo)</script>
+ ]<!--
+ <script language="javascript" type="text/javascript">
+    /* Aqui iniciamos um comentário em bloco
+       note que mesmo estando em outra linha, 
+       este texto continua sendo comentário
+       até que seja colocado o delimitador 
+       de fim de comentário */
+     sIFRS = "Este é o curso de JavaScript do IFRS!"; 
+     // Atribui um texto à variável
+     alert(sIFRS);      
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+    // exemplo função usando chaves
+     function mensagem() {
+         alert("Olá");
+         alert("Seja bem-vindo!\nAo curso de JavaScript");
+     }
+     
+     // função sendo chamada
+     mensagem();
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+    //Variável global
+    var Valor1, Valor2, Valor3; 
+    
+    //Atribuindo valor as variáveis
+    Valor1 = 45;
+    Valor2 = 65;
+    Valor3 = 85; 
+     
+    alert(Valor1);
+    alert(Valor2);
+    alert(Valor3);
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+    var nNumber, sString, bBoolean; 
+    //As variáveis ainda não assumiram um tipo específico
+     
+     nNumber = 10; //nNumber assume tipo numérico
+     sString = "Exemplo"; //sString assume tipo string - texto
+     bBoolean = true; //bBoolean assume tipo booleano
+     
+     alert(nNumber + "-" + sString + "-" + bBoolean);
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+    dtDate = new Date();
+     /* typeOf devolve como resultado o tipo da variável,
+     neste caso ele vai disparar no alert o tipo de dados que este método apresenta o valor que aparecerá na tela é "undefined" pois não existe buscaDia dentro do objeto Date */
+     alert(typeof(dtDate.buscaDia));
+     dtDate = null; // Define a variável como null / nula     
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+     var dtDate, aArray, i;
+     dtDate = new Date(); //Variável do tipo objeto date
+     aArray = new Array();//Variável do tipo objeto array
+     alert(dtDate.getDate() + "/" + (dtDate.getMonth()+1) + "/" +
+           dtDate.getYear());
+     aArray[0] = "Joao";
+     aArray[1] = "Paulo";
+     aArray[2] = "Pedro";
+     aArray[3] = "Antônio";
+     aArray.sort();
+     for(i=0;i<aArray.length;i++)
+     {
+         document.write(aArray[i] +"<br>");
+     }
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+     prompt("Prencha seu nome:","digite seu nome");
+     confirm("Você tem certeza ?");
+ </script>
+
+ <script language="javascript" type="text/javascript">
+     var nome="IFRS";
+     document.write("Esta primeira linha");
+     document.write("Esta segunda linha "+nome+"<br/>");
+     document.write("Esta terceira linha ");
+ </script>
+ 
+ <script language="javascript" type="text/javascript">
+        var nNumero1, nNumero2, nResultado;
+        // Atribuição de 0 ao número
+        nNumero1 = 1;
+        nNumero2 = 2;
+        // Atribui uma soma ao resultado
+        nResultado = nNumero1 + nNumero2;
+        // Incrementa o resulta em 1
+        nResultado++;
+        // Soma 10 ao valor atual do resultado
+        nResultado+=10;
+        /*
+        Dispara o alert true caso a variável nResultado seja igual a 25 ou false caso não seja.
+        Neste caso, o resultado será false porque nResultado não é igual a 25
+        */
+        alert(nResultado == 25);
+    </script>
+ -->   
+    <script language="javascript" type="text/javascript">
+        var nContador;
+        var sValor1, sValor2;
+        var sResultado, nResultado;
+        sValor1 = "10"; //Valor String
+        sValor2 = "1.5"; // Valor Fracionado
+        sResultado = sValor1 + sValor2;
+        nResultado = parseInt(sValor1) + parseFloat(sValor2);
+        // Concatenação
+        alert(sResultado + " OI " + nResultado);
+        // Soma numérica
+        alert(nResultado);
+    </script>
+ 
+     <script language="javascript" type="text/javascript">
+        var sTelefone = "1234XDFRT";
+        //validar telefone (verificação se contem apenas números)
+        if (isNaN(sTelefone)){
+            alert ("O seu telefone " + sTelefone + " deve conter apenas números!");
+        }
+    </script>
+ 
+     <script language="javascript" type="text/javascript">
+        function Soma(nNumero1, nNumero2)
+        {
+            var nSoma;
+            nSoma = nNumero1+nNumero2;
+            alert("Soma= " + nSoma);
+        }
+        Soma(10,5);
+    </script>
+ 
+    <script language="javascript" type="text/javascript">
+        var v1, v2, soma;
+        console.log("Digite primeiro número: ");
+        v1 = Number (prompt());
+        console.log("Digite segundo número: ");
+        v2 = Number (prompt()); 
+        soma = v1 + v2;
+        if(soma > 100) {
+            document.write("oi " + soma);
+        }
+    </script>
+ 
+     <script language="javascript" type="text/javascript">  
+        var sValor1, sValor2;
+        var sResultado;
+        sValor1 = 10;
+        sValor2 = 15;
+        sResultado= sValor1 + sValor2;
+        nResultado= parseInt(sValor1) + parseInt(sValor2);
+        alert("O Resultado da Soma Foram= " + nResultado);
+
+    </script>
+ 
+ 
+ 
+ 
+ 
+</head>
+
+ <body>
+  <header>
+   <h1>Tutorial HTML Progressivo</h1>
+   <h2>Apostila de HTML & CSS completa e grátis</h2>
+  </header>
+
+<article>
+ <header>
+  <h3>Como criar sites: HTML e CSS</h3>
+  <p>HTML blá blá blá <br /> etc etc etc</p>
+ </header>
+ <footer>
+  <p>Artigo criado por PHSANTINI</p>
+ </footer>
+</article>
+
+  <footer>
+   <p>Todos os direitos reservados. Projeto HTML Progressivo 2018</p>
+  </footer>
+ 
+ </body>
+
+</html>
